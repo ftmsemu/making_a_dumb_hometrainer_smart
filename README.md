@@ -25,8 +25,7 @@ whom I met during various CTF events where we competed in.
 
 ![](.//media/image1.jpeg){width="3.095833333333333in"
 height="2.4256944444444444in"}The parcel contained a microcontroller
-board. A nRF52 DK (
-https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52-DK)
+board. A nRF52 DK (<https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52-DK>)
 from Nordic Semiconductor which is equipped with a nRF52382 ARM Cortex
 M4 core. Nordic is best known for their excellent Bluetooth and ANT
 support in their chips. Luca worked with these chips some years ago
@@ -86,7 +85,9 @@ was that it was actually not magic what was happening there, and one
 could basically write cool applications using Bluetooth.
 
 ![](.//media/image2.jpeg){width="1.9395833333333334in"
-height="3.0236111111111112in"}After these first successful baby steps
+height="3.0236111111111112in"}
+
+After these first successful baby steps
 with that new platform, it was then that I remembered that I had plans
 to replace my old cheesy home trainer bike I bought at a local
 discounter some years ago with a cool \"trainer\" which everyone seems
@@ -112,7 +113,9 @@ motivation than just pedaling away on my own in our top floor sleeping
 room while watching some TV series.
 
 ![](.//media/image3.jpeg){width="1.7104166666666667in"
-height="0.9625in"}Though those hardware devices are definitely no cheap
+height="0.9625in"}
+
+Though those hardware devices are definitely no cheap
 invest and you will need to have an accompanying (racing) bike it turned
 out it was easier said than done as all these kind of products had been
 sold out and were on back order for MONTHS. So even if I had a racing
@@ -124,7 +127,9 @@ cheap variant where you just have a roll pressed against your tire to
 simulate the resistance that were ridiculously hard to get.
 
 ![](.//media/image4.jpeg){width="1.3034722222222221in"
-height="1.3076388888888888in"}It was not until Christmas until the
+height="1.3076388888888888in"}
+
+It was not until Christmas until the
 situation improved and stores were restocked slowly. These smart
 trainers are connected via Bluetooth or ANT+ with the smartphone apps
 and using those apps you can then control the devices by setting the
@@ -145,9 +150,10 @@ mounted LCD display. The trainer was about 5 years old and back then
 nobody seemed to care about those features unless you were cycling on a
 professional basis.
 
-But also for those not
 ![](.//media/image5.jpeg){width="1.179861111111111in"
-height="1.1888888888888889in"}equipped with the latest and greatest in
+height="1.1888888888888889in"}
+
+But also for those not equipped with the latest and greatest in
 sports technology, the vendors of those apps have something to offer to
 enable you to use (i.e. pay for) their services. You can attach a
 cadence and speed sensor to your bike (actually two sensors: one to the
@@ -196,11 +202,13 @@ client, which features it must or should offer and how it should react
 to commands the client sends to it. There are not only specifications
 for a heart rate sensor and a cycling sensor but there is a horn of
 plenty of services. You can see a list here:
-<https://www.bluetooth.com/specifications/gatt/> . The CSCS is described
-in this document,
+<https://www.bluetooth.com/specifications/gatt/>. 
+
+The CSCS is described in this document,
 <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261450>
 and the Cycling Speed and Cadence Profile is described here
 <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261449>.
+
 So what is the Profile then you ask? The Bluetooth profile for CSC for
 examples mentions that the CSCS should always be offered in combination
 with a BAS, the \"Battery service\" in order to let the client see the
@@ -281,12 +289,13 @@ in the fond and I worked from there to customize it a little bit for the
 measurements I had.
 
 Luckily, the original designer I got in contact with agreed to help me
-with my endeavor and so I
+with my endeavor and so I got multiple designs from which I could
+choose the best fitting that I then printed. 
 ![](.//media/image6.jpeg){width="1.2097222222222221in"
 height="1.3125in"}![](.//media/image7.jpeg){width="1.4625in"
-height="1.8520833333333333in"}got multiple designs from which I could
-choose the best fitting that I then printed. My main concern was that
-the overall structure was too heavy so the iPad might not be put there
+height="1.8520833333333333in"}
+
+My main concern was that the overall structure was too heavy so the iPad might not be put there
 safely. I bought some M8 metal rods on eBay and some clamps that I fixed
 to my handlebar. The tablet holder could be threaded onto the rod and
 one lid was resting over the top of the bike computer and secured with
@@ -325,7 +334,7 @@ from m/s to km/h.
 For the circumference of the wheel I used 2.136 m based on the following
 assumptions: rim: 27\", tire: 25 mm rim: 630.00 mm + 2x 25.00 mm =
 680.00 mm (diameter) x π = 2136.28 mm
-(https://www.bikecalc.com/wheel\_size\_math)
+(<https://www.bikecalc.com/wheel\_size\_math>)
 
 I verified my measurements over various value ranges, while pedaling at
 60,65, 70, \... up to 100 rpm and it matched perfectly! That means I
@@ -431,7 +440,7 @@ visited the nRF community <https://devzone.nordicsemi.com/> where you
 can ask questions to the community but usually receive answers from the
 tech staff at Nordic within a day, explaining to you in a comprehensible
 way a solution to your problem. I took advantage of that quite some time
-over the course of this project :-D
+over the course of this project 😉
 
 So, I finally extended my embedded app accordingly and after a short
 while \"speed\" data was available to the client application as well.
@@ -571,7 +580,7 @@ said I verified all my assumptions with live readings from the trainer
 and when I was confident that my results were correct, I implemented it
 into the app. At that time, I thought \"Well, level 20 is surely more
 than enough. I actually never rode on a level higher than 14 or 16\".
-How wrong I would be with that assumption, I did not know yet :-D
+How wrong I would be with that assumption, I did not know yet 😉
 
 ![](.//media/image12.png){width="3.074426946631671in"
 height="3.9857819335083113in"}From that moment on I was able to send the
@@ -633,7 +642,7 @@ and there were indeed a lot of more or less complete implementations
 that you could find on GitHub or stackoverflow.com. Basically, the
 scenario repeated there for FTMS. It was next to nothing to be found for
 the problem at hand but suddenly I found a lot of good posts and
-examples for issues, I already solved in the meantime :-D That's life...
+examples for issues, I already solved in the meantime 😉 That's life...
 
 So, it was spec reading again. Again, I have to say, in retrospect, the
 actual problem wasn't too hard, just unfamiliar. When you've done that a
@@ -738,9 +747,7 @@ What does that mean? If you do not debounce the signal, what will happen
 when you press the button and connect it to GND (or TTL high) and look
 at it with an oscilloscope or a logic analyzer.
 
-![](.//media/image15.png){width="1.4166666666666667in"
-height="1.226388888888889in"}You might think that once the circuit is
-closed (or opened for that matter), the signal will just transition from
+You might think that once the circuit is closed (or opened for that matter), the signal will just transition from
 Low to High or from High to Low. In the end, after few milli-seconds,
 this is indeed what will have happened. But until that state is stable,
 you will experience multiple transitions between those states for a very
@@ -751,7 +758,8 @@ their peaks and summits all the time until they find a position where
 they can finally align next to each other. On a oscilloscope it might
 look like this:
 
-[^1]
+![](.//media/image15.png){width="1.4166666666666667in"
+height="1.226388888888889in"}
 
 The problem is that for a human these bouncing states are not even
 noticeable timewise but for a microcontroller they seem to take an
@@ -774,8 +782,9 @@ This was very important to me!
 Why? Because of this:
 
 ![](.//media/image16.jpeg){width="1.5763888888888888in"
-height="2.1020833333333333in"}I already mentioned my cheesy cheap
-cadence sensor I had at first, right? Well, I did not throw it into the
+height="2.1020833333333333in"}
+
+I already mentioned my cheesy cheap cadence sensor I had at first, right? Well, I did not throw it into the
 trash but decided to give it another chance. I did not want to remove
 and reattach the good sensor from the bike every time when I was trying
 something out, so I used the cheap sensor on my desk.
@@ -815,8 +824,9 @@ kept pressed\", \"button has been toggled (pressed and released)\". This
 was exactly what I was looking for!
 
 ![](.//media/image17.jpeg){width="1.8340277777777778in"
-height="2.0680555555555555in"}I basically wanted to go for the \"button
-has been toggled\" event. The problem is that the code in the SDK was
+height="2.0680555555555555in"}
+
+I basically wanted to go for the \"button has been toggled\" event. The problem is that the code in the SDK was
 not developed in such a way that you can easily add more buttons than
 the ones physically present on the board already. That means -- if you
 want to keep the already provided functionality to wake up the board,
@@ -842,8 +852,9 @@ a later version. Read here more about it:
 <https://devzone.nordicsemi.com/f/nordic-q-a/69253/using-app_buttons-with-bsp-buttons-plus-own-buttons>
 
 ![](.//media/image18.jpeg){width="1.1701388888888888in"
-height="1.354861111111111in"}After these changes to my app I was now
-able to ride along the Zwift track and when the incline was rising I was
+height="1.354861111111111in"}
+
+After these changes to my app I was now able to ride along the Zwift track and when the incline was rising I was
 increasing the resistance on my trainer by pressing \"+\" and afterwards
 pressing the \"+\" pushbutton connected to my nRF52-DK. The application
 would then react to that press by increasing or decreasing the global
@@ -1021,8 +1032,9 @@ pressed the voltage between the two solder points was not actually 0V,
 e.g. connect to GND, like you might assume it was, but was about 1.2V.
 
 ![](.//media/image22.png){width="1.0069444444444444in"
-height="1.8708333333333333in"}That value is out of the range where it
-would be safely detected as a binary 0 or 1 (above V~IL~ in the image),
+height="1.8708333333333333in"}
+
+That value is out of the range where it would be safely detected as a binary 0 or 1 (above V~IL~ in the image),
 so in case I wanted to detect it with the nRF board I would need to have
 some ADC conversion and check on the measured voltage.
 
@@ -1032,8 +1044,9 @@ I understood there was no interrupt that gets triggered when a certain
 value is read, just when a value *at all* was read.
 
 ![](.//media/image23.png){width="1.1993055555555556in"
-height="1.2159722222222222in"}But what was more irritating was that I
-was not sure what that would mean with respect to triggering an
+height="1.2159722222222222in"}
+
+But what was more irritating was that I was not sure what that would mean with respect to triggering an
 artificial button press. Though I have some light experience with
 tinkering with microcontroller, much to my shame, I have to admit I am
 pretty clueless with electronic circuits and components on the physical
@@ -1164,14 +1177,15 @@ me. As I said in the beginning I have very little limited knowledge
 about all the \"low level\" electronics stuff and it was very
 enlightening to experience now what effect and consequences this diode
 had on the whole application, even if that now imposed a small problem
-to me! So, long story short: Read you manuals and plan accordingly :-/
+to me! So, long story short: Read you manuals and plan accordingly 😉
 
 ![](.//media/image26.png){width="6.6930555555555555in"
 height="2.8194444444444446in"}
 
 ![](.//media/image27.jpeg){width="1.0652777777777778in"
-height="1.1833333333333333in"}To build my tiny circuit I needed to have
-some PCB where I could solder my components to. I didn't want to have
+height="1.1833333333333333in"} 
+
+To build my tiny circuit I needed to have some PCB where I could solder my components to. I didn't want to have
 some "flying cabling" within the housing and the components potentially
 causing a short circuit. I was worried enough for overlooking something
 important and risking frying the PCB the first time I would issue a "Set
@@ -1725,7 +1739,7 @@ real bike I would have multiple gears that the rider would eventually
 shift through whenever the climbs a hill or rides on a flat track!
 
 But now that the game was handling all the environmental aspects the two
-+ and -- buttons I had wired to the nRF52-DK and just for following
+"+" and "-" buttons I had wired to the nRF52-DK and just for following
 those changes were somewhat useless! I could reuse them as a gear shift!
 That sounded like a good idea! But how much would the change of one gear
 improve on the resistance I had to face? Hm, again I had no idea.
@@ -1734,8 +1748,9 @@ to the conclusion that a higher gear would make you faster but at the
 same time it was of course harder to pedal again and vice versa.
 
 ![](.//media/image43.png){width="1.5319444444444446in"
-height="4.152777777777778in"}If you remember, back in the beginning of
-this write-up, I said I had that fixed value of 2.58 that was the factor
+height="4.152777777777778in"}
+
+If you remember, back in the beginning of this write-up, I said I had that fixed value of 2.58 that was the factor
 between the crank revolutions and the wheel revolutions. Well, basically
 this was the gear ratio, right? And the gear ratio is of course
 influenced by the gears! So, I thought I could just change that ratio
@@ -1745,7 +1760,7 @@ below the default level. This sounded like a good idea! But what ratios
 to take? Luckily, the Internet has the answers to everything! There is
 this very good side called [www.bikecalc.com](http://www.bikecalc.com),
 which had the perfect values for you based on the actual hardware that
-was on your bike! I used <https://www.bikecalc.com/gear_ratios> and
+was on your bike! I used [www.bikecalc.com/gear_ratios](https://www.bikecalc.com/gear_ratios) and
 chose to go with a standard Shimano 12 cassette 45-10 setup with a fixed
 chain ring at 53 teeth. Using those parameters I ended up with gear
 ratios of: 1.18, 1.33, 1.47, 1.66, 1.89, 2.21, 2.52, 2.94, 3.31, 3.79,
@@ -2005,7 +2020,7 @@ the actual data to display. I tried to mimic what I saw in the Arduino
 examples and filled the handler function with everything I considered
 necessary. After about one hour of fiddling around the display suddenly
 showed a lot of noise after initialization! Wow! I had achieved
-\"something\" :-D
+\"something\" 😉
 
 In retrospect, I can now say I would have never been able to do that
 without the help of a very valuable tool and even with that tool it took
@@ -2162,8 +2177,9 @@ real professional device with a \"feel good\" factor.
 height="1.7173611111111111in"}
 
 ![](.//media/image46.jpeg){width="1.6737445319335083in"
-height="2.132904636920385in"}You connect the probes to the device, plug
-in the USB cable, start the software and there you go. For the sampling
+height="2.132904636920385in"}
+
+You connect the probes to the device, plug in the USB cable, start the software and there you go. For the sampling
 of the data you have multiple options. Just push the record button and
 get the data flowing for a certain time or until you press \"Stop\" or
 use the trigger to start the recording whenever you see a certain event
@@ -2209,8 +2225,9 @@ nothing being sent. I think you agree this looked very strange. No
 wonder I got only noise on the display!
 
 ![](.//media/image49.jpeg){width="1.6930643044619422in"
-height="1.748575021872266in"}But I think you also get the picture here
-(pun intended!): Without these insights what was weird, I would have
+height="1.748575021872266in"}
+
+But I think you also get the picture here (pun intended!): Without these insights what was weird, I would have
 spent a lot of time just trying around with different options and
 settings until I maybe finally found out by chance what was actually
 wrong with my code. Seeing here, that at the very least the sending of
@@ -2242,8 +2259,9 @@ The possibilities are many-fold and there is already a large number of
 user-provided plugins available that you can choose from!
 
 ![](.//media/image51.jpeg){width="1.6777777777777778in"
-height="1.9701388888888889in"}To make a long story short -- there were
-several errors with my code, that I was able to find using the Logic
+height="1.9701388888888889in"}
+
+To make a long story short -- there were several errors with my code, that I was able to find using the Logic
 software. The first and biggest mistake was that I was instantiating the
 completely wrong handler for that display controller. The u8g2 library
 features a large list of supported controllers with different protocols
@@ -2267,9 +2285,12 @@ right thing to do in the examples for TWI I first looked at, but for SPI
 it is self-evident to send multiple bytes at once, and this is also what
 the library does. But if my handler just *ignores* those additional
 bytes and only sends the first one, it is evident the overall sequence
-looked very wrong. Several facepalms later I
+looked very wrong. 
+
 ![](.//media/image53.jpeg){width="1.5479166666666666in"
-height="1.4895833333333333in"}managed to get it right and finally saw a
+height="1.4895833333333333in"}
+
+Several facepalms later I managed to get it right and finally saw a
 nice \"Hello world\" string displayed on my OLED. From that moment on I
 could forget about \"porting\" the library and concentrate on the actual
 usage of it. I made a quick layout for all relevant data to be displayed
@@ -2363,7 +2384,7 @@ well-known blogger called DC Rainmaker evaluated a couple of them and I
 chose the style of the Tacx bike. The following picture shows this
 design (Picture taken from DC Rainmaker\'s webpage
 <https://www.dcrainmaker.com/2019/09/tacx-neo-bike-smart-in-depth-detailed-review.html>
-- please check it out, it\'s a great blog that I got much inspiration
+\- please check it out, it\'s a great blog that I got much inspiration
 from!).
 
 I was researching if there are some kind of ready-made products
@@ -2406,7 +2427,7 @@ implementations on GitHub to interface this device. I will integrate two
 buttons \"Left\", \"Right\" on my two handlebar drops (the blue ones)
 which act similar to this device as I don\'t have a real front wheel I
 could turn. This means again two more GPIOs to be used... oO I am
-running out of free GPIOs soon :-D Of course the handlebar will be
+running out of free GPIOs soon 😉 Of course the handlebar will be
 wrapped with tape beforehand, the picture just shows some \"proof of
 concept\" implementation. For drilling the holes into the handlebar I
 bought a metal drill set that I can use with my box column drill. I
